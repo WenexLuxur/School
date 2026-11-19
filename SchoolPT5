@@ -1,1 +1,8 @@
+num1 = input ('Sisestage arv: ')
+num2 = float (num1)
 
+num_sqrt = num2 ** 0.5
+
+#print ('Ruutjuur {0} on võrnde {1}'.format(num1, num_sqrt))
+print ('Ruutjuur {0}-st on võrdne {1:0.1f}'.format(num1, num_sqrt))
+#print('The square root of %0.1f is %0.1f'%(num2 ,num_sqrt))
