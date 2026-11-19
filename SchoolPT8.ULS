@@ -1,0 +1,34 @@
+# Guess Number
+
+import random
+
+attempt = 20
+
+while True:
+    # Компьютер придумывает число от 1 до 100
+    compnumber = random.randint(1, 100)
+    # print(compnumber)  # подсказка для проверки, можно раскомментировать
+    print("У вас {0} попыток чтобы отгадать число!".format(attempt))
+
+    won = False
+
+    for i in range(1, attempt + 1):
+        number = int(input('Введите число от 1 до 100: '))
+        if compnumber == number:
+            print('Вы угадали! Поздравляем!')
+            print('Вы использовали {0} попыток.'.format(i))
+            won = True
+            break
+        else:
+            if compnumber < number:
+                print('Мое число меньше!')
+            if compnumber > number:
+                print('Мое число больше!')
+
+    if not won:
+        print('Вы проиграли! Я загадал число {0}.'.format(compnumber))
+
+    again = input('Хотите сыграть еще раз? (да/нет): ')
+    if again.lower() != 'да':
+        print('Спасибо за игру!')
+        break
