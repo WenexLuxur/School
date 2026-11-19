@@ -1,1 +1,12 @@
+# Odd or Even
 
+# Python program to check if the input number is odd or even.
+# A number is even if division by 2 gives a remainder of 0.
+# If the remainder is 1, it is an odd number.
+
+num = int(input("Введите число: "))
+if (num % 2) == 0:
+   print("{0} кратно 2".format(num))
+else:
+   print("{0} не кратно 2".format(num))
+Задание: модифицировать программу так, чтобы пользователь сам мог вводить кратное число
