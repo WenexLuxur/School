@@ -1,1 +1,12 @@
+# Odd or Even
 
+# Python program to check if the input number is divisible by another number.
+# A number is divisible if the remainder of the division is 0.
+
+num = int(input("Введите число: "))
+divisor = int(input("Введите кратное число: "))
+
+if (num % divisor) == 0:
+    print("{0} кратно {1}".format(num, divisor))
+else:
+    print("{0} не кратно {1}".format(num, divisor))
